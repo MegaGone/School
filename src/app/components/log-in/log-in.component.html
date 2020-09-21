@@ -1,0 +1,46 @@
+<div class="infoContainer">
+    <div class="tInfo">
+        <h2>{{titulo}}</h2>
+    </div>
+
+    <div class="all">
+       <ul>
+        <li *ngFor="let comentario of comments" class="comment">
+            <h6>@{{comentario.nombre}}</h6>
+            <img src="{{url+'getImage/'+comentario.imagen}}" *ngIf="comentario.imagen">
+            <div class="boxComment">
+                <p>
+                    {{comentario.mensaje}}
+                </p>
+            </div>
+        </li>
+       </ul>
+    </div>
+
+
+    <aside>
+        <form #formulario="ngForm" (ngSubmit)="enviar(formulario)">
+            <p>
+                <label for="nombre">Nombre de usuario</label>
+                <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="student.nombre" required>
+                <span *ngIf="nombre.touched && !nombre.valid" class="error">Obligatorio</span>
+            </p>
+            <p>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" #mensaje="ngModel" [(ngModel)]="student.mensaje" required></textarea>
+                <span *ngIf="mensaje.touched && !mensaje.valid" class="error">Obligatorio</span>
+            </p>
+            <p>
+                <label for="email">Correo</label>
+                <input type="email" name="email" #email="ngModel" [(ngModel)]="student.email" required>
+                <span *ngIf="email.touched && !email.valid" class="error">Obligatorio</span>
+            </p>
+            <p>
+                <label for="imagen">Seleciona una Imagen</label>
+                <input type="file" name="imagen" placeholder="Subir" (change)="fileChangeEvent($event)">
+            </p>
+            <input type="submit" value="Enviar" [disabled]="!formulario.valid">
+
+        </form>
+    </aside>
+</div>

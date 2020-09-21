@@ -1,0 +1,634 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../img/galazy.jpg');
+    background-attachment: fixed;
+    font-size: 20px;
+}
+
+header {
+    background: #000000;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: block;
+    width: 100%;
+    height: inherit;
+    margin: 0px auto;
+    margin-top: -8px;
+    line-height: center;
+    margin-left: 32%;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 88px;
+}
+
+header a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+header a:hover, .activo {
+    background: #7B7B7B;
+}
+
+#logo {
+    size: 20px;
+}
+
+#logo a {
+    transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover {
+    background: none;
+    color: white;
+    transform: scale(1.80, 1.80);
+}
+
+#global {
+    min-height: 650px;
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 1px solid purple;
+    padding-top: 120px;
+}
+
+footer{
+    display: block;
+    background: rgba(0 , 0 , 0, 0.5);
+    height: 50px;
+    width: 80%;
+    margin: 0px auto;
+    color: white;
+}
+
+footer p{
+    padding-top: 15px;
+    margin-left: 870px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+/* Home */
+#titulo{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#titulo h1{
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+    font-size: 60px;
+}
+
+#titulo p{
+    color: white;
+    font-size: 30px;
+}
+
+#titulo span{
+    color: gray;
+    font-size: 15px;
+}
+
+article.cuerpo{
+    width: 80%;
+    margin: 0px auto;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+article h2{
+    color: gray;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+article p{
+    color: black;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+/* Info */
+
+.container{
+    width: 100%;
+    margin: 0px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tInfo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 15px;
+    width: 70%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    margin-left: 15%; 
+}
+
+.info1{
+    margin-top: 25px;
+    width: 25%;
+    height: 500px;
+    margin-left: 5%;
+    float: left;
+    background: #303030;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.icono1{
+    text-align: center;
+}
+
+.info1 h4, .info2 h4, .info3 h4{
+    margin-top: 5px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.info2{
+    margin-top: 25px;
+    width: 25%;
+    min-height: 500px;
+    margin-left: 80px;
+    float: left;
+    background: #303030;
+    border-radius: 20px;
+}
+
+.info3{
+    margin-top: 25px;
+    min-height: 500px;
+    width: 25%;
+    margin-left: 3%;
+    float: right;
+    margin-right: 5%;
+    background: #303030;
+    border-radius: 20px;
+}
+
+.info1, .info2, .info3{
+    transition: color 500ms, transform 500ms;
+}
+
+.info1:hover, .info2:hover, .info3:hover{
+    background: url('../img/galazy.jpg');
+    color: white;
+    transform: scale(1.05, 1.05);
+    font-size: 20px;
+}
+
+.info1 input:hover, .info2 input:hover, .info3 input:hover{
+    background: black;
+    color: white;
+}
+
+/* Info general */
+
+.infoContainer{
+    width: 100%;
+    margin: 0px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.infoTitle{
+    text-align: center;
+    width: 75%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-left: 12%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.padre{
+    margin-top: 25px;
+    margin-left: 5%;
+}
+
+/* Info1 */
+
+.desarrone{
+    float: right;
+    width: 40%;
+    height: auto;
+    margin-top: -435px;
+    margin-right: 5%;
+    text-align: justify;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.desarrotwo{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    float: left;
+    margin-top: -55px;
+    text-align: justify;
+}
+
+.infoContainer .mat-icon{
+    height:48px !important;
+    width:48px !important;
+    font-size:100px !important;
+    position: fixed;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+.infoContainer .mat-icon{
+    transition: color 500ms, transform 500ms;
+}
+
+.infoContainer .mat-icon:hover{
+    color: red;
+    transform: scale(1.20, 1.20);
+}
+
+/* info 2 */
+.padre2{
+    margin-top: 25px;
+    margin-left: 54%;
+    margin-right: 5%;
+}
+
+.desarrone2{
+    float: left;
+    width: 45%;
+    height: auto;
+    margin-top: -435px;
+    margin-left: 5%;
+    text-align: justify;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* info3 */
+.edteam{
+    height: 300px;
+}
+
+.infoedTeam a{
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.one{
+    margin-top: 25px;
+    margin-left: 69%;
+    margin-right: 5%;
+    width: 28%;
+}
+
+.infoedTeam{
+    float: left;
+    text-align: justify;
+    width: 62%;
+    margin-left: 5%;
+    font-size: 19px;
+}
+
+.udemy{
+    height: 300px;
+    margin-top: 15px;
+}
+
+.infoUdemy{
+    float: right;
+    text-align: justify;
+    width: 62%;
+    margin-right: 5%;
+    font-size: 19px;
+}
+.two{
+    margin-right: 68%;
+    margin-left: 5%;
+}
+
+.infoUdemy a{
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.info1 .mat-icon{
+    height:48px !important;
+    width:48px !important;
+    font-size:250px !important;
+    margin-top: 25%;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.info2 .mat-icon{
+    height:48px !important;
+    width:48px !important;
+    font-size:250px !important;
+    margin-top: 25%;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.info3 .mat-icon{
+    height:48px !important;
+    width:48px !important;
+    font-size:250px !important;
+    margin-top: 25%;
+    cursor: pointer;
+    margin-left: 11px;
+}
+
+/* Coments */
+
+aside{
+    margin-top: 25px;
+    display: block;
+    float: right;
+    height: 500px;
+    border-left: 2px solid gray;
+    width: 310px;
+    margin-right: 1%;
+}
+
+form label{
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-left: 15px;
+    padding-bottom: 2px;
+}
+
+form input[type="text"], input[type="email"]{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: 25px;
+    width: 250px;
+    display: block;
+    background: #ccc;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: black;
+}
+
+form textarea{
+    margin-left: 15px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 50px;
+    max-height: 150px;
+    margin-bottom: 5px;
+    display: block;
+    background: #ccc;
+    border: none;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    color: black;
+}
+
+form input[type="file"]{
+    margin-left: 15px;
+    display: block;
+}
+
+form input[type="submit"]{
+    border: none;
+    margin-top: 25px;
+    margin-left: 34%;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    border: 2px solid black;
+    transition: color 500ms, transform 500ms;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background: black;
+    transform: scale(1.15, 1.15);
+}
+
+form input[type="submit"]:disabled{
+    opacity: 0.7;
+}
+
+form input[type="submit"]:disabled:hover{
+    background: black;
+    transform: scale(1, 1);
+}
+
+.error{
+    color: red;
+    display: block;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* Comentarios */
+
+.all{
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 3%;
+    text-decoration: none;
+    width: 50%;
+    height: 500px;
+}
+
+.comment{
+    list-style: none;
+    display: block;
+    position: relative;
+    background: #9E9D9D;
+    width: 100%;
+    height: 95px;
+    border-radius: 10px;
+}
+
+.comment h6{
+    margin-left: 1%;
+    color: white;
+    margin-top: 1%;
+    position: relative;
+}
+
+.comment img{
+    width: 80px;
+    height: 70px;
+    margin-left: 1%;
+    float: left;
+}
+
+.comment .boxComment{
+    background: #C1C1C1;
+    float: right;
+    width: 84%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    height: 67%;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.comment p{
+    margin-top: 1%;
+    color: black;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: justify;
+}
+
+/* Contacto */
+.contact1{
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 35%;
+    min-height: 300px;
+    float: left;
+}
+
+.contact1 img, .contact2 img{
+    position: relative;
+    cursor: pointer;
+    margin-left: 1%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.contact1 p{
+    display: block;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.contact2{
+    margin-top: 20px;
+    margin-right: 10%;
+    width: 35%;
+    min-height: 300px;
+    float: right;
+}
+
+.contact2 p{
+    display: block;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.social{
+    float: inline-end;
+    width: 80%;
+    margin-top: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 95px;
+    border-top: 2px solid gray;
+}
+
+.allsocial{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.ne1{
+    height:48px !important;
+    width:48px !important;
+    font-size:80px !important;
+    float: left;
+    margin-right: 15%;
+    cursor: pointer;
+}
+
+.ne2{
+    height:48px !important;
+    width:48px !important;
+    font-size:80px !important;
+    float: left;
+    margin-right: 15%;
+    cursor: pointer;
+}
+
+.ne3{
+    height:48px !important;
+    width:48px !important;
+    font-size:80px !important;
+    float: left;
+    margin-right: 15%;
+    cursor: pointer;
+}
+
+.ne4{
+    height:48px !important;
+    width:48px !important;
+    font-size:80px !important;
+    float: left;
+    cursor: pointer;
+}
