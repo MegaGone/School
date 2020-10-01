@@ -276,6 +276,27 @@ article p{
     text-align: justify;
 }
 
+.dFixed{
+    float: right;
+    width: 40%;
+    height: auto;
+    margin-top: -385px;
+    margin-right: 5%;
+    text-align: justify;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dFixed2{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    float: left;
+    margin-top: -5px;
+    text-align: justify;
+}
+
+
 .infoContainer .mat-icon{
     height:48px !important;
     width:48px !important;
